@@ -1,6 +1,7 @@
 body {
    margin: 0;
    padding: 0;
+   font-size: 1em;
    font-family: 'Roboto Condensed', sans-serif;
    background-color: rgb(122, 80, 105);
 }
@@ -25,19 +26,23 @@ header {
 }
 
 .nav {
-   padding: 25px 0;
+   display: flex;
+
+}
+
+ul {
+   list-style: none; 
+   padding: 25px 50px;
 
 }
 
 .lista {
    display: flex;
-   margin: 0;
-   list-style: none;
+   margin: 0; 
    justify-content: space-evenly;
  }
 
- .li {
-   color: #fff;
+ .li-item {
    margin: 0 10px;  
    padding: 5px;
 
@@ -45,12 +50,16 @@ header {
 
  a {
    text-decoration: none;
-   color: white;
-   font-size: 20px;
+   color: rgb(238, 221, 231);
+   font-size: 1.5em;
   
  }
+ .item-title:hover {
+   color: rgb(255, 255, 255)
+   
+ }
 
- .li:active {
+ .li-item:active {
    border: 1px solid;
    border-radius: 20px;
    border-color: white;
@@ -70,7 +79,6 @@ header {
    background-color: rgb(81, 44, 67);
    transition-property: background-color;
    
-
 }
 
 
@@ -97,19 +105,19 @@ header {
  }  
 
 .section-1 {
-   background-color:white ;
+   background-color:white;
+   justify-content: center;
  
 }
 .container {
    display: flex;
    width: 100%;
-   padding: 20px;
 }
 
 .container-section-1 {
-   
+   width: 80%;
    flex-direction: row;
-   padding: 200px 20px;
+   padding: 200px 0;
    align-items: center;
    justify-content: space-evenly;
    
@@ -124,21 +132,21 @@ header {
 }
 
 .hello {
-   font-size: 45px;
+   font-size: 3em;
    font-weight: 800;
    margin: 0;
    text-shadow: 25px;
 }
 
 .name {
-   font-size: 70px;
+   font-size: 5em;
    font-weight: 5000;
    margin: 10px 0;
    color:rgb(122, 80, 105) ;
 }
 
 .titles {
-   font-size: 25px;
+   font-size: 1.5em;
    width: 100%;
 }
 
@@ -202,14 +210,14 @@ header {
 
 .title-section {
    color: rgb(122,80,105);
-   font-size: 50px;
+   font-size: 3em;
    font-weight: 700;
    text-align: center;
    margin-top: 80px;
 }
 
 .section-description {
-   font-size: 25px;
+   font-size: 1.5em;
    max-width: 600px;
    text-align: center;
 }
@@ -228,14 +236,14 @@ header {
    margin: 15px;
    padding: 10px 30px;
    text-align: center;
-   font-size: 30px;
+   font-size: 2em;
    font-weight: 700;
    border: 2px solid rgb(202, 199, 199);
    border-radius: 10px;
 }
 
 .fa-brands {
-   font-size: 90px;
+   font-size: 3em;
    margin-top: 35px;
 }
 .fa-html5 {
@@ -269,36 +277,36 @@ header {
 @media (max-width: 720px) {
    .skills-item {
       width: 25%;
-      font-size: 20px;
+      font-size: 1.3em;
    }
    .fa-brands {
-      font-size: 60px;
+      font-size: 3em;
    }
-  
+ 
 }
 
 /* SECTION 3 - Quote */
 
 .section-3 {
-   background-color: rgb(122,80,105)
-   
+   background-color: rgb(122,80,105);
 
 }
 
 .container-section-3 {
    flex-direction: column;
    color: white;
-   font-size: 40px;
+   font-size: 2em;
    justify-content: center;
    align-items: center;
    text-align: center;
+   margin: 50px 0;
    
    
 }
 
 .fa-quote-right {
    color: rgb(246,240,244);
-   font-size: 120px;
+   font-size: 3em;
 
 }
 .quote {
@@ -310,15 +318,16 @@ header {
 .quote-author {
    font-weight: 700;
    color: rgb(246,240,244);
+   font-size: 1.2em;
 }
 
 @media (max-width: 720px) {
    .container-section-3 {
-      font-size: 25px;
+      font-size: 1.3em;
    }
 }
 
-/* SECTION 3 - Projects */
+/* SECTION 4 - Projects */
 
 .section-4 {
    background-color: rgb(246, 240, 244);
@@ -350,7 +359,7 @@ header {
    margin: 15px;
    padding: 30px;
    text-align: center;
-   font-size: 25px;
+   font-size: 1.5em;
    font-weight: 500;
    border: 2px solid rgb(202, 199, 199);
    border-radius: 10px;
@@ -373,10 +382,149 @@ header {
 @media (max-width: 720px) {
    .project-item {
       width: 25%;
-      font-size: 20px;
+      font-size: 1.3em;
    }
    .img-item {
       width: 90%;
    }
   
 }
+
+/* SECTION 5 - Contact */
+
+.section-5 {
+   display: flex;
+   width: 100%;
+   background-color:rgb(122,80,105);
+   justify-content: center;
+}
+
+.title-section-contact {
+   font-size: 3em;
+}
+
+.contact-social {
+   align-items: start;
+}
+
+.container-contact {
+   display: flex;
+   flex-direction: row;
+   width: 80%;
+   justify-content: space-between;
+   align-items: start;
+   margin: 100px 0;
+   background-color:white ;
+   border-radius: 15px;
+   border: 1px solid #e0e0e0;
+   padding: 50px;
+}
+
+.section-5a, .section-5b{
+   padding: 20px;
+   width: 50%;
+}
+
+.contact-info {
+   font-size: 1.2em;
+}
+
+.li-social {
+   color: black;
+}
+
+.fa-twitter,.fa-github-alt, .fa-linkedin-in, .fa-envelope {
+   font-size: 20px;
+   color: rgb(122,80,105);
+}
+
+/* Form */
+
+.form-item {
+   display: flex;
+   width: 100%;
+}
+
+#input-text, #input-email, #input-submit{
+   font-family: 'Roboto Condensed', sans-serif;
+   border: none;
+   background-color: rgb(240, 236, 236);
+   border-radius: 20px;
+   font-size: 1em;
+   padding: 5px 15px;
+}
+
+#input-submit {
+   font-size: 1.5em;
+   background-color: rgb(167, 122, 151);
+   border-color: rgb(100, 63, 87);
+   color: rgb(238,221,231);
+}
+
+
+.label-title {
+   font-size: 1.2em;
+   padding: 0 0 10px 0;
+   font-weight: 700;
+}
+
+.contact-box {
+   display: flex;
+   flex-direction: column;
+   padding: 0 20px  20px  0;  
+}
+
+#input-submit:hover {
+   background-color: rgb(122,80,105);
+   color: white;
+}
+
+#input-submit:active {
+   box-shadow: rgb(240, 214, 231) 0px 1px 4px, rgb(195, 170, 185) 0px 0px 0px 3px;
+
+}
+
+@media (max-width:955px) {
+   .container-contact {
+      flex-direction: column;
+   }
+   .section-5a, .section-5b {
+      width: 100%;
+   }
+}
+
+@media (max-width:480px) {
+   .form-item {
+      flex-direction: column;
+   }
+}
+
+footer {
+   margin: 0;
+   height: 300px;
+   background-color: white;
+}
+
+/* FOOTER */
+
+/* FOOTER NAVIGATION */
+.nav-footer {
+   width: 100%;
+   align-items: center;
+}
+
+.lista-footer {
+   display: flex;
+   /* margin: 200px;  */
+   justify-content: space-evenly;
+ }
+
+ .li-item-footer {
+   padding: 5px;
+
+ }
+
+ .item-title-footer {
+   color: rgb(122,80,105);
+   
+ }
