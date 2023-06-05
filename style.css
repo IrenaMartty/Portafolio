@@ -13,8 +13,8 @@ header {
    background-color: rgb(122, 80, 105); 
    position: sticky;
    top: 0px;
- 
-   
+
+
 }
 
 .navigation-bar {
@@ -54,6 +54,7 @@ ul {
    font-size: 1.5em;
   
  }
+
  .item-title:hover {
    color: rgb(255, 255, 255)
    
@@ -162,6 +163,28 @@ ul {
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   
 
+}
+
+.my-work-button {
+   padding: 10px;
+   font-size: 2em;
+   background-color: rgb(167,122,151);
+   color: white;
+   font-weight: 700px;
+   border-radius: 25px;
+   width: 200px;
+   text-align: center;
+}
+
+.my-work-button:hover {
+   background-color: rgb(81, 44, 67);
+   transition-property: background-color;
+   
+}
+
+
+.my-work-button:active {
+   box-shadow: rgb(122,80,105) 0px 2px 8px 0px;
 }
 
 @media (max-width: 1000px) {
@@ -276,7 +299,7 @@ ul {
 
 @media (max-width: 720px) {
    .skills-item {
-      width: 25%;
+      width: 50%;
       font-size: 1.3em;
    }
    .fa-brands {
@@ -347,6 +370,7 @@ ul {
    flex-wrap: wrap;
    justify-content: center;
    padding: 50px;
+   max-width: 1000px;
    
 }
 
@@ -357,7 +381,6 @@ ul {
    background-color: white;
    width: 260px;
    margin: 15px;
-   padding: 30px;
    text-align: center;
    font-size: 1.5em;
    font-weight: 500;
@@ -381,9 +404,11 @@ ul {
 
 @media (max-width: 720px) {
    .project-item {
-      width: 25%;
       font-size: 1.3em;
+      margin: 15px 0;
+      padding: 0;
    }
+   
    .img-item {
       width: 90%;
    }
@@ -405,6 +430,7 @@ ul {
 
 .contact-social {
    align-items: start;
+   
 }
 
 .container-contact {
@@ -417,23 +443,35 @@ ul {
    background-color:white ;
    border-radius: 15px;
    border: 1px solid #e0e0e0;
-   padding: 50px;
+   padding: 20px;
 }
 
 .section-5a, .section-5b{
-   padding: 20px;
+
    width: 50%;
 }
 
+/* Socials */
+
 .contact-info {
    font-size: 1.2em;
+   
+   
 }
 
 .li-social {
+   font-size: 0.6em;
+   color: black;
+   font-weight: 200;
+   padding: 5px 10px;
+}
+
+.link-social {
    color: black;
 }
 
 .fa-twitter,.fa-github-alt, .fa-linkedin-in, .fa-envelope {
+   margin: 10px 15px;
    font-size: 20px;
    color: rgb(122,80,105);
 }
@@ -452,6 +490,7 @@ ul {
    border-radius: 20px;
    font-size: 1em;
    padding: 5px 15px;
+   margin: 0 5px 15px 0px;
 }
 
 #input-submit {
@@ -471,7 +510,7 @@ ul {
 .contact-box {
    display: flex;
    flex-direction: column;
-   padding: 0 20px  20px  0;  
+   /* padding: 0 20px  20px  0;   */
 }
 
 #input-submit:hover {
@@ -480,23 +519,33 @@ ul {
 }
 
 #input-submit:active {
-   box-shadow: rgb(240, 214, 231) 0px 1px 4px, rgb(195, 170, 185) 0px 0px 0px 3px;
-
+   box-shadow: rgb(122,80,105) 0px 2px 8px 0px;
 }
+
+
 
 @media (max-width:955px) {
    .container-contact {
       flex-direction: column;
    }
    .section-5a, .section-5b {
+      flex-direction: column;
       width: 100%;
    }
+  
+
 }
 
 @media (max-width:480px) {
    .form-item {
       flex-direction: column;
    }
+   .li-social {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
 }
 
 
@@ -511,7 +560,9 @@ footer {
    align-items: center;
    padding: 80px 20px 60px;
 }
+
 /* FOOTER NAVIGATION */
+
 .nav-footer {
    width: 100%;
    align-items: center;
@@ -526,12 +577,17 @@ footer {
  .li-item-footer {
    padding: 5px;
 
- }
+}
 
  .item-title-footer {
    padding: 15px;
    color: rgb(122,80,105);
    
+ }
+
+ .li-item-footer:active {
+   border-radius: 10px;
+   box-shadow: rgb(122,80,105) 0px 2px 8px 0px;
  }
 
  /* FOOTER SOCIAL NETWORKS */
@@ -550,11 +606,28 @@ footer {
    color: white;
    background-color: rgb(122,80,105);
    border-radius: 25px;
-   padding:15px;
-   margin: 0;
+   padding: 15px;
+   
 }
+
 .final-thought {
    font-size: 1.5em;
    color: gray;
-   
+}
+
+.fa-brands-footer:hover {
+   background-color: white;
+   border: solid 1.5px rgb(122,80,105);
+   color: rgb(122,80,105);
+}
+
+.fa-brands-footer:active {
+   box-shadow: rgb(122,80,105) 0px 2px 8px 0px;
+}
+  
+
+@media (max-width: 1000px) {
+   footer {
+      display: none;
+   }
 }
