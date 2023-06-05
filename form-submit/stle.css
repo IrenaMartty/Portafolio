@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.container {
+    display: flex;
+    background-color: rgb(226, 224, 224);
+    border: solid 1px gray;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+   
+}
+
+
+.container-caja {
+    height: 250px;
+    width: 550px;
+   flex-direction: column;
+   text-align: center;
+   font-size: 30px;
+
+
+   
+}
+.fa-solid {
+    font-size: 60px;
+}
