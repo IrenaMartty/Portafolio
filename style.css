@@ -499,23 +499,27 @@ ul {
    }
 }
 
-footer {
-   margin: 0;
-   height: 300px;
-   background-color: white;
-}
 
 /* FOOTER */
 
+footer {
+   display: flex;
+   height: 300px;
+   background-color: white;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 80px 20px 60px;
+}
 /* FOOTER NAVIGATION */
 .nav-footer {
    width: 100%;
    align-items: center;
+
 }
 
 .lista-footer {
    display: flex;
-   /* margin: 200px;  */
    justify-content: space-evenly;
  }
 
@@ -525,6 +529,32 @@ footer {
  }
 
  .item-title-footer {
+   padding: 15px;
    color: rgb(122,80,105);
    
  }
+
+ /* FOOTER SOCIAL NETWORKS */
+
+ .container-footer {
+   max width: 500px;
+ }
+
+ .social-footer {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+ }
+
+.fa-brands-footer {
+   color: white;
+   background-color: rgb(122,80,105);
+   border-radius: 25px;
+   padding:15px;
+   margin: 0;
+}
+.final-thought {
+   font-size: 1.5em;
+   color: gray;
+   
+}
