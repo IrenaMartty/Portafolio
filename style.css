@@ -111,10 +111,7 @@ ul {
 }
 
 .container-about-me {
-   /* flex-direction: column;
-   justify-content: center; */
-   /* align-items: left;
-   justify-content: space-evenly; */
+   max-width: 1000px;
 }
 
 .hello {
@@ -350,6 +347,9 @@ ul {
    flex-wrap: wrap;
    justify-content: center;
    max-width: 1000px;
+   padding: 50px 0;
+   
+
 }
 
 .project-item {
@@ -419,6 +419,7 @@ ul {
    border-radius: 15px;
    border: 1px solid #e0e0e0;
    padding: 20px;
+   max-width: 1000px;
 }
 
 .section-5a, .section-5b{
@@ -435,8 +436,10 @@ ul {
 .li-social {
    font-size: 0.6em;
    color: black;
-   font-weight: 200;
+   font-weight: 500;
    padding: 5px 10px;
+   border: 1px solid transparent;
+   border-radius: 25px;
 }
 .li-social:hover i {
    background-color: rgb(122,80,105);
@@ -446,10 +449,16 @@ ul {
 
 }
 .li-social:hover a{
-   color: rgb(122,80,105);
+   color: rgb(177, 92, 143);
 }
 
-.link-social {
+.li-social:active{
+   border-radius: 30px;
+   padding: auto;
+   box-shadow: rgb(122,80,105) 0px 2px 8px 0px;
+}
+
+.link-social{
    color: black;
 }
 
@@ -592,6 +601,7 @@ footer {
 .fa-brands-footer {
    color: white;
    background-color: rgb(122,80,105);
+   border: solid 1.5px transparent;
    border-radius: 25px;
    padding: 15px;
 }
